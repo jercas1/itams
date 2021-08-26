@@ -761,9 +761,12 @@ $function = $_POST['function'];
                 $ass_description = $row[10];
                 $ass_remarks = $row[11];
 
+                echo json_encode($row);
+
             }
    
         }
+
         
 }
 

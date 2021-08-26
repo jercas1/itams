@@ -130,12 +130,12 @@ $pdf->Cell(65, 0, 'DESCRIPTION.', 1, 0, 'C', 0, '', 0, false, 'T', 'M');
 $pdf->Cell(15, 0, 'QTY', 1, 0, 'C', 0, '', 0, false, 'T', 'M');
 $pdf->Cell(35, 0, 'CONDITION', 1, 1, 'C', 0, '', 0, false, 'T', 'M');
 
-//$pdf->Ln(1);
-//$pdf->Cell(30, 0, $, 0, 0, 'C');
-//$pdf->Cell(30, 0, $, 0, 0, 'C');
-//$pdf->Cell(30, 0, $, 0, 0, 'C');
-//$pdf->Cell(30, 0, $, 0, 0, 'C');
-//$pdf->Cell(30, 0, $, 0, 0, 'C');
+$pdf->Ln(1);
+$pdf->Cell(30, 0, $_GET['data'], 0, 0, 'C');
+$pdf->Cell(30, 0, '$', 0, 0, 'C');
+$pdf->Cell(30, 0, '$', 0, 0, 'C');
+$pdf->Cell(30, 0, '$', 0, 0, 'C');
+$pdf->Cell(30, 0, '$', 0, 0, 'C');
 
    
 //$html = '<table border="1" style="text-align:center; ">
@@ -166,6 +166,6 @@ $pdf->Cell(35, 0, 'CONDITION', 1, 1, 'C', 0, '', 0, false, 'T', 'M');
 
 
 //Close and output PDF document
-$pdf->Output('sample.pdf','D');
+$pdf->Output('sample.pdf');
 
 ?>

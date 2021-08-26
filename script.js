@@ -613,7 +613,8 @@ function generate_acc_form(id){
         success: function(data){
             console.log(data);
             console.log(id);
-
+            window.location.href =
+              "http://localhost/itams/accountability_form.php?data=" + data;
         }
     })
 }

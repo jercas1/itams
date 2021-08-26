@@ -51,13 +51,13 @@ $(document).ready(function(){
 		if((search == '')&&(search == null))
 		{ 
             acc_get_emp_record();
-            generate_acc_form();
+            // generate_acc_form();
 		}
 		else
 		{
 			
             acc_get_emp_record(search);
-            generate_acc_form(search);
+            // generate_acc_form(search);
 		}
 	});
 });
