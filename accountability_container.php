@@ -32,7 +32,7 @@
                 <div class="col">
                     <input type="text" class="form-control mb-3" id="field_issuer" placeholder="" required>
                     <div class="d-grid gap-2">
-                      <button class="btn btn-primary" name="generate" type="button" onclick="sample()">Generate</button>
+                      <button class="btn btn-primary" name="generate" type="button" onclick="generate_acc_form()">Generate</button>
                     </div>
                 </div>
             </div>
